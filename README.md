@@ -72,3 +72,29 @@ A clearer view of the current content of the git repo:
 ## Note
 
 Not taking "Renamed" into consideration.
+
+## Analysis
+
+
+The left (green) column of the statuses shows the difference between the staging area and the repo. Possible combinations:
+
+(D, A and M stands for Deleted, Added and Modified, respectively. \_ means there are no additions, deletions and modifications, and can be understood as a no-status. \_/M stands for no-status or Modified, depending on whether `a` is the same in the repo and in the staging area.)
+
+| Status of file `a`              | `a` exists in the repo? | N   | Y    |
+| ------------------------------- | ----------------------- | --- | ---- |
+| `a` exists in the staging area? |                         |     |      |
+| N                               |                         | \_  | D    |
+| Y                               |                         | A   | \_/M |
+
+The right (red) column of the statuses shows the difference between the working directory and the staging area. Possible combinations:
+
+(?? stands for Untracked.)
+
+| Status of file `a`                   | `a` exists in the staging area? | N   | Y    |
+| ------------------------------------ | ------------------------------- | --- | ---- |
+| `a` exists in the working directory? |                                 |     |      |
+| N                                    |                                 | \_  | D    |
+| Y                                    |                                 | ??  | \_/M |
+
+Putting all the possible combinations of the left and right statuses together, we get 11 statuses as shown above.
+
