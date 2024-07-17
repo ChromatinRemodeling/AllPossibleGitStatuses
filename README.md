@@ -49,6 +49,22 @@ echo MM1 > MM.txt
 
 3. run `git status -s`
 
+A clearer view of the current content of the git repo:
+
+|  Filename (.txt)  | Working directory/tree | Staging area (index) | .git directory (Repository) |     
+| --- | ---------------------- | -------------------- | --------------------------- | 
+| D\_ |                        |                      | D\_1                        |     
+| AD  |                        | AD1                  |                             |     
+| MD  |                        | MD2                  | MD1                         |    
+| \_D |                        | \_D1                 | \_D1                        |     
+| \_Q | \_Q1                   |                      |                             |     
+| DQ  | DQ1                    |                      | DQ1                         |     
+| AM  | AM2                    | AM1                  |                             |     
+| A\_ | A\_1                   | A\_1                 |                             |     
+| M\_ | M\_2                   | M\_2                 | M\_1                        |     
+| \_M | \_M2                   | \_M1                 | \_M1                        |     
+| MM  | MM1                    | MM2                  | MM1                         |     
+
 ## Result
 
 ![Pasted image 20240717171121](https://github.com/user-attachments/assets/62f6746e-3652-4b76-94d7-206f1c421fe9)
