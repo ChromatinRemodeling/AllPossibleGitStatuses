@@ -1,6 +1,8 @@
 # AllPossibleGitStatuses
 Short snippet to generate all possible git file statuses
 
+(TODO: consider merging and rebasing)
+
 ## Steps
 
 1. initialize a new git repo, `cd` into it
