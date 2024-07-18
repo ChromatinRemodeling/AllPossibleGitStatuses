@@ -1,5 +1,5 @@
 # AllPossibleGitStatuses
-Short snippet to generate all possible git statuses
+Short snippet to generate all possible git file statuses
 
 ## Steps
 
