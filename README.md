@@ -1,7 +1,7 @@
 # AllPossibleGitStatuses
 Short snippet to generate all possible git file statuses
 
-(TODO: consider merging and rebasing)
+(TODO: consider merging and rebasing. AFAIK the only important status in merging is "Both modified"?)
 
 ## Steps
 
